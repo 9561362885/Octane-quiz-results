@@ -530,10 +530,13 @@
     &_cards_button {
         text-align: center;
     }
-
-
 }
 
+@media (min-width: 768px) {
+    .awe__quiz_hero_cards_before.mobile {
+        display: none !important;
+    }
+}
 
 @media (max-width: 767px) {
     .hero_social p {
