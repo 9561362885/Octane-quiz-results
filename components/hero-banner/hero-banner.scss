@@ -4,6 +4,7 @@
     padding-bottom: 61px;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 
     @media (max-width: 767px) {
         padding-top: 34px;
@@ -257,6 +258,7 @@
                 top: -11%;
                 transform: unset;
                 left: -14%;
+                display: none !important;
             }
         }
 
@@ -528,6 +530,8 @@
     &_cards_button {
         text-align: center;
     }
+
+
 }
 
 
@@ -556,6 +560,12 @@
     .awe__quiz_hero_cards_button a.btn.btn--ghost.btn--ghost-light {
         min-width: unset;
     }
+    .awe__quiz_hero_cards_before.mobile {
+        display: block !important;
+        top: unset;
+        bottom: 8%;
+        left: -45%;
+    }
 }
 
 @media (max-width: 360px) {
@@ -565,5 +575,9 @@
     .awe__quiz_hero_cards_col_slides_nav {
         position: absolute;
         bottom: 105px;
+    }
+    .awe__quiz_hero_cards_before.mobile {
+        bottom: 9%;
+        height: 1100px !important;
     }
 }
