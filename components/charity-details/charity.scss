@@ -1,0 +1,122 @@
+.charity__details {
+    position: relative;
+    background-color: var(--c__brand-01);
+    padding-top: 18px;
+    padding-bottom: 66px;
+
+    @media (max-width: 767px) {
+        padding-top: 21px;
+        padding-bottom: 43px;
+    }
+
+    .container {
+        max-width: 1369px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &_main {
+        border-radius: 20px;
+        border: 1px solid rgba(225, 225, 225, 0.80);
+        background: linear-gradient(125deg, rgba(240, 240, 240, 0.30) 18.87%, rgba(188, 188, 188, 0.33) 87.63%);
+        box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(1px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 85px 143px 78px 140px;
+        justify-content: space-between;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            padding: 60px 70px 60px 70px;
+            align-items: center;
+        }
+
+        @media (max-width: 767px) {
+            display: block;
+            padding: 20px 23px 61px 26px;
+        }
+    }
+
+    &_logo {
+        flex-basis: 42%;
+
+        img {
+            display: block;
+            max-width: 100%;
+
+            @media (max-width: 767px) {
+                max-width: 248px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &_content {
+        flex-basis: 45%;
+        max-width: 449px;
+        margin-top: -23px;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            margin-top: 0;
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 40px;
+            line-height: 150%;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 13px;
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                line-height: 1;
+            }
+
+            @media (max-width: 767px) {
+                line-height: 1;
+            }
+        }
+        
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 156%;
+        }
+
+        &_button {
+            text-align: center;
+            margin-top: 60px;
+    
+            @media (max-width: 767px) {
+                margin-top: 52px;
+            }
+    
+            a {
+                padding: 16px 10px;
+                max-width: 285px;
+                display: block;
+                margin: 0 auto;
+
+                @media (max-width: 767px) {
+                    max-width: 280px;
+                    background-color: var(--c__brand-08-100);
+                    color: var(--c__brand-01);
+                    border-color: var(--c__brand-08-100);
+                }
+
+                &:hover {
+                    color: var(--c__brand-01);
+
+                    @media (max-width: 767px) {
+                        background: transparent;
+                        color: var(--c__brand-08-100);
+                    }
+                }
+            }
+        }
+    }
+}

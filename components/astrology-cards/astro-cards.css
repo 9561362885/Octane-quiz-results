@@ -1,0 +1,374 @@
+.astro__cards {
+  position: relative;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 43px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .astro__cards {
+    padding-top: 66px;
+    padding-bottom: 61px;
+  }
+}
+.astro__cards_after {
+  position: absolute;
+  content: "";
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1099px;
+  height: 1581.907px;
+  top: -33.5%;
+  left: 49.5%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .astro__cards_after {
+    display: none;
+  }
+}
+.astro__cards_before {
+  position: absolute;
+  content: "";
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 391px;
+  height: 1073px;
+  top: -3.1%;
+  left: 49.5%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .astro__cards_before {
+    display: none;
+  }
+}
+.astro__cards .container {
+  max-width: 1369px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 767px) {
+  .astro__cards .container {
+    padding-left: 24px;
+    padding-right: 17px;
+  }
+}
+.astro__cards_row {
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .astro__cards_row {
+    display: block;
+  }
+}
+.astro__cards_main {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  border-radius: 20px;
+  padding: 25px 31px;
+}
+.astro__cards_main_title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 29px;
+}
+@media (max-width: 767px) {
+  .astro__cards_main_title {
+    gap: 11px;
+  }
+}
+.astro__cards_main_title_img img {
+  display: block;
+  max-width: 100%;
+}
+.astro__cards_main_title_tags {
+  margin-top: 7px;
+}
+@media (max-width: 767px) {
+  .astro__cards_main_title_tags {
+    margin-top: 0;
+  }
+}
+.astro__cards_main_title_tags p {
+  font-weight: 300;
+  line-height: 22.5px;
+  letter-spacing: 0.75px;
+}
+.astro__cards_main_title_tags h2 {
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.astro__cards_main_description {
+  margin-top: 13px;
+}
+.astro__cards_main_description p {
+  line-height: 23.4px;
+  font-weight: 400;
+}
+.astro__cards_main_prod {
+  max-width: 294px;
+  margin: 57px auto 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .astro__cards_main_prod {
+    margin-top: 25px;
+    max-width: 300px;
+  }
+}
+.astro__cards_main_prod_inner_content.prodcontent {
+  display: none;
+}
+.astro__cards_main_prod_inner_content.prodcontent.active {
+  display: block;
+}
+.astro__cards_main_prod_inner_content_img {
+  position: relative;
+}
+.astro__cards_main_prod_inner_content_img img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+.astro__cards_main_prod_inner_content_img img.like {
+  position: absolute;
+  top: 6px;
+  right: 9px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  max-width: auto;
+  max-height: auto;
+}
+.astro__cards_main_prod_inner_content_info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 46px;
+}
+.astro__cards_main_prod_inner_content_info_tag a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: var(--c__brand-08-100);
+}
+.astro__cards_main_prod_inner_content_info_tag p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 19.2px;
+  color: var(--c__brand-08-100);
+  margin-top: 3px;
+}
+.astro__cards_main_prod_inner_content_info_price p {
+  font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  color: var(--c__brand-08-100);
+}
+.astro__cards_main_prod_inner_content_info_price p span.old_price {
+  color: #774A33;
+  font-weight: 300;
+  margin-right: 10px;
+}
+.astro__cards_main_prod_nav ul.prodnav {
+  position: absolute;
+  bottom: 126px;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .astro__cards_main_prod_nav ul.prodnav {
+    bottom: 125px;
+  }
+}
+.astro__cards_main_prod_nav ul.prodnav li {
+  display: inline-block;
+  margin-right: 6px;
+}
+.astro__cards_main_prod_nav ul.prodnav li a {
+  border-radius: 14px;
+  border: 1px solid var(--c__brand-08-100);
+  width: 11.72px;
+  height: 11.72px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .astro__cards_main_prod_nav ul.prodnav li a {
+    width: 12px;
+    height: 12px;
+  }
+}
+.astro__cards_main_prod_nav ul.prodnav li a.tab1 {
+  background: #E5D1AF;
+}
+.astro__cards_main_prod_nav ul.prodnav li a.tab2 {
+  background: #E0E0E0;
+}
+.astro__cards_main_prod_nav ul.prodnav li a.tab3 {
+  background: linear-gradient(90deg, #FCF1DE 0%, #DFAD56 100%);
+}
+.astro__cards_main_prod_nav ul.prodnav li a.tab4 {
+  background: linear-gradient(90deg, #E0E0E0 0%, #7A7A7A 100%);
+}
+.astro__cards_main_prod_cta {
+  margin-top: 12px;
+}
+.astro__cards_main_prod_cta .button1 {
+  font-size: 16px;
+  line-height: 21.79px;
+  letter-spacing: 3.2px;
+  text-align: center;
+  display: block;
+  border: 1px solid var(--cl__high-contrast);
+  background: var(--cl__high-contrast);
+  color: var(--c__brand-01);
+  padding: 16px 15px 14px;
+  text-decoration: none;
+}
+.astro__cards_main_prod_cta .button1:hover {
+  background: transparent;
+  color: var(--cl__high-contrast);
+}
+.astro__cards_main.left {
+  flex-basis: 49.307%;
+  background: linear-gradient(125deg, rgba(242, 204, 188, 0.3) 18.87%, rgba(181, 127, 109, 0.7) 87.63%);
+  margin-right: 2.63%;
+}
+@media (max-width: 767px) {
+  .astro__cards_main.left {
+    margin-right: 0;
+    margin-bottom: 24px;
+    padding: 20px 26px 51px 26px;
+  }
+}
+.astro__cards_main.right {
+  flex-basis: 47.773%;
+  background: linear-gradient(125deg, rgba(242, 204, 188, 0.3) 18.87%, rgba(181, 127, 109, 0.7) 87.63%);
+  padding: 23px 18px 50px;
+}
+@media (max-width: 767px) {
+  .astro__cards_main.right {
+    padding: 37px 17px 50px 23px;
+    overflow: hidden;
+  }
+}
+.astro__cards_button {
+  text-align: center;
+  margin-top: 53px;
+}
+@media (max-width: 767px) {
+  .astro__cards_button {
+    margin-top: 39px;
+  }
+}
+
+.astro__cards_main.right .astro__cards_main_title {
+  margin-left: 15px;
+  gap: 41px;
+}
+
+.astro__cards_main.right .astro__cards_main_description {
+  margin-left: 11px;
+  margin-right: 1px;
+  margin-top: 20px;
+}
+
+.astro__cards_main.right .astro__cards_main_prod {
+  margin-top: 53px;
+}
+
+.astro__cards_main.right .astro__cards_main_slider {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+@media (min-width: 1155px) and (max-width: 1285px) {
+  .right .astro__cards_main_prod_nav ul.prodnav {
+    bottom: 145px;
+  }
+}
+@media (min-width: 1010px) and (max-width: 1154px) {
+  .right .astro__cards_main_prod_nav ul.prodnav {
+    bottom: 165px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1009px) {
+  .right .astro__cards_main_prod_nav ul.prodnav {
+    bottom: 181px;
+  }
+}
+@media (min-width: 850px) and (max-width: 868px) {
+  .right .astro__cards_main_prod_nav ul.prodnav {
+    bottom: 205px;
+  }
+}
+@media (min-width: 869px) and (max-width: 991px) {
+  .right .astro__cards_main_prod_nav ul.prodnav {
+    bottom: 185px;
+  }
+}
+@media (min-width: 768px) and (max-width: 849px) {
+  .right .astro__cards_main_prod_inner_content_img img:first-child {
+    min-height: 160px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .right .astro__cards_main_prod_nav ul.prodnav {
+    bottom: 225px;
+  }
+  .astro__cards::after {
+    width: 800px;
+    height: 1200px;
+    top: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .astro__cards_main.right .astro__cards_main_title {
+    margin-left: 0;
+    gap: 20px;
+  }
+  .astro__cards_main.right .astro__cards_main_description {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 14px;
+  }
+  .astro__cards_main.right .astro__cards_main_prod {
+    margin-top: 30px;
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  .astro__cards_main.right .astro__cards_main_slider .slick-list.draggable {
+    overflow: visible;
+  }
+  .astro__cards_main.right .astro__cards_main_slider {
+    display: block;
+    gap: unset;
+    flex-wrap: unset;
+    max-width: 274px;
+  }
+  .astro__cards_main.right .astro__cards_main_prod_inner_content_info {
+    min-height: 85px;
+  }
+  .astro__cards_main.right .astro__cards_main_prod_nav ul.prodnav {
+    bottom: 170px;
+  }
+}/*# sourceMappingURL=astro-cards.css.map */

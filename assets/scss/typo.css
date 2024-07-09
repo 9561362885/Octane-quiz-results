@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  font-family: "Engrace";
+  src: url("../fonts/Engrace-Light.woff2") format("woff2"), url("../fonts/Engrace-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Engrace";
+  src: url("../fonts/Engrace-LightItalic.woff2") format("woff2"), url("../fonts/Engrace-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Engrace";
+  src: url("../fonts/Engrace-Regular.woff2") format("woff2"), url("../fonts/Engrace-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Engrace";
+  src: url("../fonts/Engrace-Italic.woff2") format("woff2"), url("../fonts/Engrace-BoldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Engrace";
+  src: url("../fonts/Engrace-SemiBold.woff2") format("woff2"), url("../fonts/Engrace-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Engrace";
+  src: url("../fonts/Engrace-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Engrace-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Engrace";
+  src: url("../fonts/Engrace-Bold.woff2") format("woff2"), url("../fonts/Engrace-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Engrace";
+  src: url("../fonts/Engrace-BoldItalic.woff2") format("woff2"), url("../fonts/Engrace-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.all-text-white h1,
+.all-text-white h2,
+.all-text-white h3,
+.all-text-white h4,
+.all-text-white h5,
+.all-text-white h6,
+.all-text-white p,
+.all-text-white li,
+.all-text-white a,
+.all-text-white span {
+  color: var(--cl__fill-1);
+}
+
+.all-text-black h1,
+.all-text-black h2,
+.all-text-black h3,
+.all-text-black h4,
+.all-text-black h5,
+.all-text-black h6,
+.all-text-black p,
+.all-text-black li,
+.all-text-black a,
+.all-text-black span {
+  color: #121212;
+}
+
+.desktop-hide {
+  display: block;
+}
+@media (min-width: 768px) {
+  .desktop-hide {
+    display: none;
+  }
+}
+
+.mobile-hide {
+  display: block;
+}
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none;
+  }
+}/*# sourceMappingURL=typo.css.map */

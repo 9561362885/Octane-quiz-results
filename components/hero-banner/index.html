@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWE Quiz | Awe Inspired</title>
+    <meta name="description" content="We believe in fine jewelry as a vehicle for empowerment. Shop our collection of goddess necklaces, coin necklaces, earrings, bracelets, rings and more." />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/components/hero-banner/hero-banner.css" />
+    <link rel="stylesheet" href="/assets/js/external/slider.css" />
+    <link rel="icon" href="/assets/icons/favicon_bd4df09a-3134-41f4-ab79-d29361866ec3.webp" type="image/png" />
+    <script src="/assets/js/hero-banner.js" defer></script>
+    <script src="/assets/js/external/jquery_min.js" defer></script>
+    <script src="/assets/js/external/slick_carousel.js" defer></script>
+    <script src="/assets/js/external/slider.js" defer></script>
+  </head>
+  <body>
+    <main id="MainContent">
+        <section class="awe__quiz_hero">
+            <div class="container">
+                <div class="awe__quiz_hero_back all-text-white desktop-hide">
+                    <a href="">
+                        <img src="/assets/images/Arrow 2.svg" alt="back-arrow" loading="lazy"> RETAKE THE QUIZ
+                    </a>
+                </div>
+                <div class="awe__quiz_hero_top">
+                    <div class="awe__quiz_hero_top_left all-text-white">
+                        <div class="hero_title">
+                            <h1 class="desktop-hide"><span id="name">[Name's or Your] </span> Goddess Chart</h1>
+                            <h1 class="mobile-hide">Here is your Goddess Chart <span id="name">[Name]</span></h1>
+                            <p>Your Goddess chart is unique to you, featuring your inner, outer and IRL Goddesses. Read on to discover magical insights.</p>
+                        </div>
+                        <div class="hero_social mobile-hide">
+                            <p>SHARE YOUR RESULTS</p>
+                            <div class="hero_social_main">
+                                <button class="share-button tiktok" onclick="shareOnTiktok()">
+                                    <img src="/assets/images/TIKTOK - SHARED.svg" alt="tiktok" loading="lazy">
+                                </button>
+                                <button class="share-button instagram" onclick="shareOnInstagram()">
+                                    <img src="/assets/images/INSTAGRAM - SHARED.svg" alt="instagram" loading="lazy">
+                                </button>
+                                <button class="share-button facebook" onclick="shareOnFacebook()">
+                                    <img src="/assets/images/FACEBOOK - SHARED.svg" alt="facebook" loading="lazy">
+                                </button>
+                                <button class="share-button copy-code" onclick="copyCode()">
+                                    <img src="/assets/images/COPY LINK - SHARED.svg" alt="copy-link" loading="lazy">
+                                </button>
+                                <button class="share-button email" onclick="shareByEmail()">
+                                    <img src="/assets/images/EMAIL - SHARED.svg" alt="email" loading="lazy">
+                                </button>
+                                <button class="share-button messenger" onclick="shareOnText()">
+                                    <img src="/assets/images/TEXT - SHARED.svg" alt="text" loading="lazy">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="awe__quiz_hero_top_right all-text-white">
+                        <p>Read about your...</p>
+                        <ul>
+                            <li><a href="">INNER, OUTER, & REAL LIFE GODDESSES</a></li>
+                            <li><a href="" class="active">ELEMENT & ZODIAC GODDESSES</a></li>
+                            <li><a href="">ANGEL NUMBER</a></li>
+                            <li><a href="">POWER AMULET</a></li>
+                            <li><a href="">AFFIRMATIONS</a></li>
+                        </ul>
+                    </div>
+                    <div class="hero_social desktop-hide all-text-white">
+                        <p>SHARE YOUR RESULTS</p>
+                        <div class="hero_social_main">
+                            <button class="share-button tiktok" onclick="shareOnTiktok()">
+                                <img src="/assets/images/TIKTOK - SHARED.svg" alt="tiktok" loading="lazy">
+                            </button>
+                            <button class="share-button instagram" onclick="shareOnInstagram()">
+                                <img src="/assets/images/INSTAGRAM - SHARED.svg" alt="instagram" loading="lazy">
+                            </button>
+                            <button class="share-button facebook" onclick="shareOnFacebook()">
+                                <img src="/assets/images/FACEBOOK - SHARED.svg" alt="facebook" loading="lazy">
+                            </button>
+                            <button class="share-button copy-code" onclick="copyCode()">
+                                <img src="/assets/images/COPY LINK - SHARED.svg" alt="copy-link" loading="lazy">
+                            </button>
+                            <button class="share-button email" onclick="shareByEmail()">
+                                <img src="/assets/images/EMAIL - SHARED.svg" alt="email" loading="lazy">
+                            </button>
+                            <button class="share-button messenger" onclick="shareOnText()">
+                                <img src="/assets/images/TEXT - SHARED.svg" alt="text" loading="lazy">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="awe__quiz_hero_back all-text-white mobile-hide">
+                    <a href="">
+                        <img src="/assets/images/Arrow 2.svg" alt="back-arrow" loading="lazy"> RETAKE THE QUIZ
+                    </a>
+                </div>
+                <div class="awe__quiz_hero_cards">
+                    <div class="awe__quiz_hero_cards_before" style="background-image: url(./assets/images/Isolation_Mode.png);"></div>
+                    <div class="awe__quiz_hero_cards_col">
+                        <div class="awe__quiz_hero_cards_col_image">
+                            <img src="/assets/images/lilith.svg" alt="lilith" loading="lazy">
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_title all-text-white">
+                            <p>Your Outer Goddess</p>
+                            <h2>Lilith</h2>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_text all-text-white">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis justo id urna vestibulum ullamcorper. Nullam urna</p>
+                            <blockquote>You have a very strong sense of self. <br>Nobody can ever make you shrink yourself. <br>You’re always ready to go to bat for women.</blockquote>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_tabs">
+                            <div class="awe__quiz_hero_cards_col_slides">
+                                <div class="awe__quiz_hero_cards_col_slides_main">
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab1-1">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/lilith-pendent.png" alt="lilith-pendent" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Special Edition Lilith Necklace</a>
+                                                <p>Embrace the fall</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p>$270</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab1-2">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/lilith-pendent.png" alt="lilith-pendent" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Special Edition Lilith Necklace</a>
+                                                <p>Embrace the fall</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p>$260</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab1-3">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/lilith-pendent.png" alt="lilith-pendent" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Special Edition Lilith Necklace</a>
+                                                <p>Embrace the fall</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p>$250</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab1-4">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/lilith-pendent.png" alt="lilith-pendent" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Special Edition Lilith Necklace</a>
+                                                <p>Embrace the fall</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p>$240</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="awe__quiz_hero_cards_col_slides_nav">
+                                    <ul class="tabnav">
+                                        <li><a href="#tab1-1" class="tab1"></a></li>
+                                        <li><a href="#tab1-2" class="tab2"></a></li>
+                                        <li><a href="#tab1-3" class="tab3"></a></li>
+                                        <li><a href="#tab1-4" class="tab4"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_cta">
+                            <a href="" class="button1">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <div class="awe__quiz_hero_cards_col">
+                        <div class="awe__quiz_hero_cards_col_image">
+                            <img src="/assets/images/SELENE.svg" alt="Selene" loading="lazy">
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_title all-text-white">
+                            <p>Your Inner Goddess</p>
+                            <h2>Selene</h2>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_text all-text-white">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis justo id urna vestibulum ullamcorper. Nullam urna </p>
+                            <blockquote>You live in the moment everyday. <br>You’re the life of a party <br>You’re very intune with your sensuality</blockquote>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_tabs">
+                            <div class="awe__quiz_hero_cards_col_slides">
+                                <div class="awe__quiz_hero_cards_col_slides_main">
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab2-1">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/selene-necklace.png" alt="AWE_GREEK_MOON_ANGLE_GOLD" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Selene Necklace</a>
+                                                <p>Greek Goddess of the moon</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p>$215</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab2-2">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/selene-necklace.png" alt="AWE_GREEK_MOON_ANGLE_GOLD" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Selene Necklace</a>
+                                                <p>Greek Goddess of the moon</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p>$205</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab2-3">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/selene-necklace.png" alt="AWE_GREEK_MOON_ANGLE_GOLD" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Selene Necklace</a>
+                                                <p>Greek Goddess of the moon</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p>$195</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab2-4">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/selene-necklace.png" alt="AWE_GREEK_MOON_ANGLE_GOLD" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Selene Necklace</a>
+                                                <p>Greek Goddess of the moon</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p>$185</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="awe__quiz_hero_cards_col_slides_nav">
+                                    <ul class="tabnav">
+                                        <li><a href="#tab2-1" class="tab1"></a></li>
+                                        <li><a href="#tab2-2" class="tab2"></a></li>
+                                        <li><a href="#tab2-3" class="tab3"></a></li>
+                                        <li><a href="#tab2-4" class="tab4"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_cta">
+                            <a href="" class="button1">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <div class="awe__quiz_hero_cards_col">
+                        <div class="awe__quiz_hero_cards_col_image">
+                            <img src="/assets/images/JOAN-OF-ARC.svg" alt="JOAN-OF-ARC" loading="lazy">
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_title all-text-white">
+                            <p>Your IRL Goddess</p>
+                            <h2>Joan of Arc</h2>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_text all-text-white">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis justo id urna vestibulum ullamcorper. Nullam urna</p>
+                            <blockquote>You live in the moment everyday. <br>You’re the life of a party <br>You’re very intune with your sensuality</blockquote>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_tabs">
+                            <div class="awe__quiz_hero_cards_col_slides">
+                                <div class="awe__quiz_hero_cards_col_slides_main">
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab3-1">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/arc-signet-ring.png" alt="JoanofArcGold" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Joan of Arc Signet Ring</a>
+                                                <p>French Saint and military leader</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p><span class="old_price"><del>$225</del></span>$180</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab3-2">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/arc-signet-ring.png" alt="JoanofArcGold" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Joan of Arc Signet Ring</a>
+                                                <p>French Saint and military leader</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p><span class="old_price"><del>$225</del></span>$170</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab3-3">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/arc-signet-ring.png" alt="JoanofArcGold" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Joan of Arc Signet Ring</a>
+                                                <p>French Saint and military leader</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p><span class="old_price"><del>$225</del></span>$160</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="awe__quiz_hero_cards_col_slides_content tabcontent" id="tab3-4">
+                                        <div class="awe__quiz_hero_cards_col_slides_content_img">
+                                            <img src="/assets/images/arc-signet-ring.png" alt="JoanofArcGold" loading="lazy">
+                                            <img src="/assets/images/like-icon.svg" class="like" alt="like" loading="lazy">
+                                        </div>
+                                        <div class="awe__quiz_hero_cards_col_slides_content_text all-text-white">
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_prod">
+                                                <a href="">Joan of Arc Signet Ring</a>
+                                                <p>French Saint and military leader</p>
+                                            </div>
+                                            <div class="awe__quiz_hero_cards_col_slides_content_text_price">
+                                                <p><span class="old_price"><del>$225</del></span>$150</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="awe__quiz_hero_cards_col_slides_nav">
+                                    <ul class="tabnav">
+                                        <li><a href="#tab3-1" class="tab1"></a></li>
+                                        <li><a href="#tab3-2" class="tab2"></a></li>
+                                        <li><a href="#tab3-3" class="tab3"></a></li>
+                                        <li><a href="#tab3-4" class="tab4"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="awe__quiz_hero_cards_col_cta">
+                            <a href="" class="button1">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="awe__quiz_hero_cards_button">
+                    <a href="" class="btn btn--ghost btn--ghost-light ">SHOP ALL GODDESSES</a>
+                </div>
+            </div>
+            <div class="scroll_to_top">
+                <img src="/assets/images/scroll-to-top.png" alt="scroll-to-top" loading="lazy" >
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
