@@ -12,3 +12,4 @@ $(conid).show()
 })
 $('.astro__cards_main_prod_nav ul.prodnav li:first-child a').trigger('click')
 })
+
